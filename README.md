@@ -42,8 +42,8 @@ After successful execution of the above given command we will have docker one ne
 
 **3> Now, Let's build a docker container from "myflaskapp" image**
 
-you can also pull the complete image from [docker_image](https://hub.docker.com/repository/docker/akshaygondaliya/object_detection/tags?page=1&ordering=last_updated) if you dont want to follow above steps.
-and can continue by renning bellow given command.
+you can also pull the complete image from [docker_image](https://hub.docker.com/repository/docker/akshaygondaliya/object_detection/tags?page=1&ordering=last_updated) if you don't want to follow above steps.
+and can continue by running bellow given command.
 
 `sudo docker run -d --name object_detection -p 5000:5000 myflaskapp`
 
