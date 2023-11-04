@@ -99,7 +99,7 @@ finally you can see your result on new arrived screen.
 
 
 
-** Idea on further improvement of custom object detection model **
+**Idea on further improvement of custom object detection model**
 
 - since my system property (i5, 8GB RAM) was bottleneck for me to train deep neural network, I was able to rech 70 % accuracy, but with good GPU system we can 
   try below mentioned option for model accuracy gain.  
