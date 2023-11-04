@@ -1,6 +1,6 @@
-###Steps to run this Repository on ubuntu 22.04 system.
+**Steps to run this Repository on ubuntu 22.04 system **
 
-### My System configuration.
+**My System configuration**
 
 os:-Linux, ubuntu-22.04
 
@@ -8,7 +8,7 @@ RAM:- 8GB
 
 Processor :- i5, 8th Gen.
 
-### Dependency guide ..
+**Dependency guide**
 
 - Please ensure that your docker desktop is installed by running bellowe command.
 `docker` 
@@ -22,33 +22,33 @@ Processor :- i5, 8th Gen.
 - If it is "inactive" then start by running bellow given command.
 `sudo systemctl start docker` 
 
-###  Clone The Repository:
+**Clone The Repository**
 
 `https://github.com/AkshayGondaliya/custom_model_app.git`
 
-### +++++++++++  Deployment process for dockerized flask application  +++++++++++
+**+++++++++++  Deployment process for dockerized flask application  +++++++++++**
 
 `cd custom_model_app/flaskapp` 
 
-### 1> Build docker image using the command given below
+**1> Build docker image using the command given below**
 
 `docker build -t myflaskapp .`
 
 After successful execution of the above given command we will have docker one new docker image "myflaskapp".
 
-### 2> check image using command..
+**2> check image using command**
 
 `sudo docker images`
 
-### 3> Now, Let's build a docker container from "myflaskapp" image  ..
+**3> Now, Let's build a docker container from "myflaskapp" image**
 
 `sudo docker run -d --name object_detection -p 5000:5000 myflaskapp`
 
-### 4> After success full execution of the above mentioned command  you can check your running application using the link:-
+**4> After success full execution of the above mentioned command  you can check your running application using the link**
 
 `http://127.0.0.1:5000`
 
-### 5> How to use app:
+**5> How to use app**
 
 step 1:- sign up
 
@@ -61,15 +61,15 @@ step 4:- Click on submit button.
 finally you can see your result on new arrived screen.
 
 
-### 6> stop your app using command :-
+**6> stop your app using command**
 
 `sudo docker stop object_detection`
 
-### 7> To start app again :-
+**7> To start app again**
 
 `sudo docker start object_detection`
 
-### +++++++++++++  all model training , evaluation ,testing and saving process  ++++++++++++++
+**+++++  all model training , evaluation ,testing and saving process  +++++**
 
     Used Dataset -> cifar-10
 
@@ -99,7 +99,7 @@ finally you can see your result on new arrived screen.
 
 
 
-### Idea on further improvement of custom object detection model.
+** Idea on further improvement of custom object detection model **
 
 - since my system property (i5, 8GB RAM) was bottleneck for me to train deep neural network, I was able to rech 70 % accuracy, but with good GPU system we can 
   try below mentioned option for model accuracy gain.  
