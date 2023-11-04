@@ -60,7 +60,6 @@ step 4:- Click on submit button.
 
 finally you can see your result on new arrived screen.
 
--Thank you
 
 ### 6> stop your app using command :-
 
@@ -70,22 +69,40 @@ finally you can see your result on new arrived screen.
 
 `sudo docker start object_detection`
 
-### +++++++++++++  all model training , evaluation and testing process  ++++++++++++++
+### +++++++++++++  all model training , evaluation ,testing and saving process  ++++++++++++++
+
+    Used Dataset -> cifar-10
+
+    Dataset source -> [tensorflow cifar-10](https://www.tensorflow.org/api_docs/python/tf/keras/datasets/cifar10/load_data)
+
+    number of classes classes -> 10  ["airplabe","automobile","bird","cat","deer","dog","frog","horse","ship","Truck"]
+
+    number of training images -> 50000
+
+    number of testing images -> 10000
+
+    Dimention of the images -> (32,32,3)
 
 - go to `cd custom_model_app/model_building_and_evaluation`
 
 - directory 1> custom_vs_resnet
       
-    Here we have compared custom trained model and re-trained resnet-50.
+    Here we have compared custom trained model and re-trained resnet-50 .
 
-    Dataset > cifar-10
+    you can also find accuracy and loss comparision graphs image
 
-    Dataset source > [tensorflow cifar-10](https://www.tensorflow.org/api_docs/python/tf/keras/datasets/cifar10/load_data)
+- directory 2> kfold_custom_vs_tuner_custom
+      
+    Here we have compared custom kfold trained model and hyperparameter optimized ketas tuner model .
 
+    you can also find accuracy and loss comparision graphs image
 
 
 
 ### Idea on further improvement of custom object detection model.
+
+- since my system property (i5, 8GB RAM) was bottleneck for me to train deep neural network, I was able to rech 70 % accuracy, but with good GPU system we can 
+  try below mentioned option for model accuracy gain.  
 
 1:- we Can add more  number of Convolutional layes followed by MaxPooling layers for better feature extraction. 
 
@@ -94,3 +111,5 @@ finally you can see your result on new arrived screen.
 3:- we can train our model on multiple epochs(>20 or >30) for better feature learning(filter trainning).
 
 4:- we can apply data augmentation techniques such as random rotation, flipping, cropping, or zooming to increase the diversity of the training data. This step helps the model generalize better to unseen data and reduces overfitting.
+
+- Thank you
