@@ -1,0 +1,51 @@
+{% extends "base.html" %} 
+{% block title %}Home{% endblock %} {% block content
+%}
+<!-- 
+<div class="row">
+  <div class="col-6"> -->
+
+<form method="POST" enctype="multipart/form-data" >
+  <body>
+
+    <div class="w3-container">
+      <div class="w3-bar w3-black border border-info rounded">
+        <button class="w3-bar-item w3-button tablink w3-red" onclick="openCity(event,'London')">Home</button>
+        <!-- <button class="w3-bar-item w3-button tablink" onclick="openCity(event,'Paris')">About Us</button> -->
+        <!-- <button class="w3-bar-item w3-button tablink" onclick="openCity(event,'Tokyo')">Downloads</button> -->
+      </div>
+      
+      <div id="London" class="w3-container  border  border-secondary rounded">
+        <br>
+        <label style='margin-left:16px' for="firstname"><b>Enter Your Choice:</label>
+        <select name="fname" id="firstname">
+          <option value="None">None</option>
+          <option value="1">1 (upload image)</option>
+
+        </select>
+
+
+            <br>
+            <br>
+
+        <label style='margin-left:16px' for="image"><b>Upload your image:</label>
+        <input type="file" id="image" name="uimage" placeholder="choose file">
+        <!-- <input type="file" id="image" name="uimage" placeholder="choose file" webkitdirectory directory multiple> -->
+
+          <br>
+          <br> 
+        <button class="button" style='margin-left:16px' type="submit">submit</button>
+        <br>
+        <br>
+      </div>  
+      <div id="Tokyo" class="w3-container w3-border city" style="display:none">
+      </div>
+    </div>
+    
+
+    </body>
+    
+</form>
+
+
+{% endblock %}
